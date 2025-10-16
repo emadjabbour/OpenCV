@@ -1,0 +1,21 @@
+python --version    لازم يكون 3.11 و فوق
+
+
+python -m pip install --upgrade pip      لتحديث البايثون و البب 
+
+
+
+pip install opencv-python        تنزيل ال opencv
+
+
+pip install opencv-contrib-python     لتنزيل بعض الملفات الضرورية للمكتبة 
+
+
+pip install numpy      بينزل بشكل مباشر مع البايثون بس يفضل تتاكد 
+
+python  خلينا نجرب اكتب 
+
+بعدن انسخ الامر التالي 
+import cv2
+print(cv2.__version__)
+ 
