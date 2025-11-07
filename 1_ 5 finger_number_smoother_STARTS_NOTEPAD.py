@@ -1,3 +1,37 @@
+
+# تمام — هذه كل الأوامر المطلوبة في ملف واحد
+# تقدر تنسخها كلها دفعة واحدة في الـ CMD
+# (شغل CMD كـ Administrator)
+
+# === إنشاء بيئة عمل مستقلة لتجنب المشاكل ===
+# python -m venv mp_env
+
+# === تفعيل البيئة ===
+# mp_env\Scripts\activate
+
+# === تحديث pip لآخر إصدار ===
+# pip install --upgrade pip
+
+# === تثبيت المكتبات المطلوبة للمشروع ===
+# pip install opencv-python     # للتعامل مع الكاميرا
+# pip install mediapipe         # للتعرف على اليد و الأصابع
+# pip install pywin32           # للتحكم ببرامج الويندوز مثل Notepad
+# pip install pynput            # للتحكم بالكيبورد و الماوس
+
+# === مكتبات إضافية غير ضرورية لكن مفيدة ===
+# pip install numpy
+
+# === بعد الإنتهاء من التثبيت شغّل كودك بهذا الأمر ===
+# (استبدل اسم الملف باسم ملفك)
+# python handstart.py
+
+# ملاحظات مهمة:
+# يجب تشغيل CMD كـ Run as Administrator
+# لازم تكون مثبت Python رسمي من python.org
+# بعد أول مرة تفعيل للبيئة، كل مرة جديدة تحتاج بس:
+# mp_env\Scripts\activate
+
+
 import cv2
 import mediapipe as mp
 import time
@@ -81,3 +115,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
